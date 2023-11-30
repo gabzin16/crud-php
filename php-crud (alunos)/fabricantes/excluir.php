@@ -1,7 +1,7 @@
 <?php
-require_once "../src/funcoes-fabricantes.php";
-$id = filter_input(INPUT_GET, 'id', FILTER_SANITIZE_NUMBER_INT);
+    require_once "../src/funcoes-fabricantes.php";
+    $id = filter_input(INPUT_GET, 'id', FILTER_SANITIZE_NUMBER_INT);
 
-excluirFabicante($conexao, $id);
-header("location:listar.php");
-// A idéia aqui é excluir direto (sem mensagens)
+    excluirFabricante($conexao, $id);
+    header("location:listar.php");
+?>
